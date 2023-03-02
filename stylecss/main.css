@@ -62,12 +62,13 @@ section {
 .tag {
   background-color: var(--card--bg);
   border-radius: 2rem;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 .article-nft img {
   border-radius: 2rem;
   cursor: pointer;
+  max-width: 90rem;
 }
 
 .article-nft img:hover {
@@ -176,10 +177,16 @@ section {
   section {
     padding: 2rem 0;
   }
+  .article-nft img {
+    max-width: 50rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .container {
     width: var(--sm--container-width);
+  }
+  .article-nft img {
+    max-width: 23rem;
   }
 }
